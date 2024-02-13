@@ -1,0 +1,16 @@
+[features]
+seeds = false
+[programs.devnet]
+nft-staking = "Fc1BDqwDckq8Bi9jHw851H6ppXfRGgms8Zn7ZooznFMG"
+[programs.mainnet]
+nft-staking = "PLSeoaC7uLWpkbFjUMvF2Er4RXQThdA6T7S9ZY6BqiT"
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+#cluster = "devnet"
+cluster = "mainnet"
+wallet = "../key/G2.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
